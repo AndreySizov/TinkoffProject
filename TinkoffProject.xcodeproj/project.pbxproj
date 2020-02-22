@@ -187,7 +187,7 @@
 				55DC097823FDF1380054614C /* Sources */,
 				55DC097923FDF1380054614C /* Frameworks */,
 				55DC097A23FDF1380054614C /* Resources */,
-				4AC0200D6D8B806D8CDF8149 /* [CP] Embed Pods Frameworks */,
+				62143703DD42FD76635D7E9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,7 +225,7 @@
 				55DC099C23FDF13B0054614C /* Sources */,
 				55DC099D23FDF13B0054614C /* Frameworks */,
 				55DC099E23FDF13B0054614C /* Resources */,
-				59AFF431D8545F1D2FF38D9A /* [CP] Embed Pods Frameworks */,
+				045105E33AE62D525568C622 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +308,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		045105E33AE62D525568C622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject-TinkoffProjectUITests/Pods-TinkoffProject-TinkoffProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject-TinkoffProjectUITests/Pods-TinkoffProject-TinkoffProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject-TinkoffProjectUITests/Pods-TinkoffProject-TinkoffProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		46700AF326128189D1477DE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,23 +345,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AC0200D6D8B806D8CDF8149 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject/Pods-TinkoffProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject/Pods-TinkoffProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject/Pods-TinkoffProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55AD9E3D23FDF5A20086CFBA /* R.swift */ = {
@@ -385,21 +385,21 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/SwiftLint/swiftlint\"\n";
 		};
-		59AFF431D8545F1D2FF38D9A /* [CP] Embed Pods Frameworks */ = {
+		62143703DD42FD76635D7E9A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject-TinkoffProjectUITests/Pods-TinkoffProject-TinkoffProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject/Pods-TinkoffProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject-TinkoffProjectUITests/Pods-TinkoffProject-TinkoffProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject/Pods-TinkoffProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject-TinkoffProjectUITests/Pods-TinkoffProject-TinkoffProjectUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinkoffProject/Pods-TinkoffProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87BB07115CFAE2A2A741B9DC /* [CP] Check Pods Manifest.lock */ = {
