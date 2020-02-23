@@ -1,0 +1,16 @@
+PODS:
+  - Authorization (0.1.0)
+
+DEPENDENCIES:
+  - Authorization (from `../`)
+
+EXTERNAL SOURCES:
+  Authorization:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Authorization: ae16e8d761cf5e5b80daa04769723d3f07e47968
+
+PODFILE CHECKSUM: 3945d659e63d43edce0a355ccbc255f78333cddc
+
+COCOAPODS: 1.8.4

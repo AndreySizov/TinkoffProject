@@ -1,24 +1,35 @@
 PODS:
+  - Authorization (0.1.0):
+    - KeychainAccess
+  - KeychainAccess (4.1.0)
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
   - SwiftLint (0.39.1)
 
 DEPENDENCIES:
+  - Authorization (from `Local Pods/Authorization`)
   - R.swift
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - KeychainAccess
     - R.swift
     - R.swift.Library
     - SwiftLint
 
+EXTERNAL SOURCES:
+  Authorization:
+    :path: Local Pods/Authorization
+
 SPEC CHECKSUMS:
+  Authorization: aa5d90151d9e9215468b41ce612144dc8bd649ab
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 25e148314fca395a40a45c1e151a854f768f2053
+PODFILE CHECKSUM: 85de4e79c5903a788bfa6f523f9f2310d6b2808a
 
 COCOAPODS: 1.8.4
