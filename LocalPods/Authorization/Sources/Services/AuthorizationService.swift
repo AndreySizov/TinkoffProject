@@ -16,9 +16,9 @@ public protocol IAuthorizationService {
 
 public class AuthorizationService: IAuthorizationService {
     
-    private let pinCodeKey = "PinCodeKey"
-    private let loginKey = "LoginKey"
-    private let passwordKey = "PasswordKey"
+    private let pinCodeKey = "TinkoffiOS.TinkoffProject.PinCodeKey"
+    private let loginKey = "TinkoffiOS.TinkoffProject.LoginKey"
+    private let passwordKey = "TinkoffiOS.TinkoffProject.PasswordKey"
     private let keychain = Keychain()
 
     public func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void) {
