@@ -8,20 +8,20 @@
 import Foundation
 import KeychainAccess
 
-public protocol IAuthorizationService {
+ protocol IAuthorizationService {
     func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void)
     func verify(pinCode: String, completion: (Result<Void, Error>) -> Void)
     func resetPinCode()
 }
 
-public class AuthorizationService: IAuthorizationService {
+ class AuthorizationService: IAuthorizationService {
     
     private let pinCodeKey = "TinkoffiOS.TinkoffProject.PinCodeKey"
     private let loginKey = "TinkoffiOS.TinkoffProject.LoginKey"
     private let passwordKey = "TinkoffiOS.TinkoffProject.PasswordKey"
     private let keychain = Keychain()
 
-    public func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void) {
+    func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void) {
         do {
             try keychain.set(pinCode, key: pinCodeKey)
             try keychain.set(pinCode, key: loginKey)
@@ -32,7 +32,7 @@ public class AuthorizationService: IAuthorizationService {
         }
     }
     
-    public func verify(pinCode: String, completion: (Result<Void, Error>) -> Void) {
+    func verify(pinCode: String, completion: (Result<Void, Error>) -> Void) {
         do {
             let savedPinCode = try keychain.get(pinCodeKey)
             
@@ -46,12 +46,18 @@ public class AuthorizationService: IAuthorizationService {
         }
     }
     
-    public func resetPinCode() {
+    func resetPinCode() {
         do {
             try keychain.remove(pinCodeKey)
         } catch {
             print("error: \(error)")
         }
     }
-
+    
+    func isPinCodeSet() -> Bool {
+        if (try? keychain.get(pinCodeKey)) == nil {
+            return false
+        }
+        return true
+    }
 }
