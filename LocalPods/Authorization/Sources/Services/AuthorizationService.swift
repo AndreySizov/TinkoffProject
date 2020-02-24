@@ -8,19 +8,19 @@
 import Foundation
 import KeychainAccess
 
- protocol IAuthorizationService {
+protocol IAuthorizationService {
     func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void)
     func verify(pinCode: String, completion: (Result<Void, Error>) -> Void)
     func resetPinCode()
 }
 
- class AuthorizationService: IAuthorizationService {
+class AuthorizationService: IAuthorizationService {
     
     private let pinCodeKey = "TinkoffiOS.TinkoffProject.PinCodeKey"
     private let loginKey = "TinkoffiOS.TinkoffProject.LoginKey"
     private let passwordKey = "TinkoffiOS.TinkoffProject.PasswordKey"
     private let keychain = Keychain()
-
+    
     func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void) {
         do {
             try keychain.set(pinCode, key: pinCodeKey)
