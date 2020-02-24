@@ -12,9 +12,27 @@ protocol SignInBuilderProtocol: class {
 }
 
 // MARK: - View
-protocol SignInViewInput: class {}
-protocol SignInViewOutput {}
+protocol SignInViewInput: class {
+     func setButtonAvailability(to isEnabled: Bool)
+}
+protocol SignInViewOutput {
+    func didTapCheckButton(isSelected: Bool)
+    func didTapContinueButton()
+    func didEnterPassword(_ text: String?)
+    func didEnterLogin(_ text: String?)
+}
 
 // MARK: - Interactor
 protocol SignInInteractorInput {}
 protocol SignInInteractorOutput: class {}
+
+// MARK: - Router
+protocol SignInRouterInput {
+    func navigateToEnterPin()
+    func navigateToBlankScreen()
+}
+
+// MARK: - Router
+protocol EnterPinRouterInput {
+    func navigateToBlankScreen()
+}

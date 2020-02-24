@@ -10,7 +10,8 @@ class EnterPinPresenter {
 
     // MARK: - Protocol properties
     weak var view: EnterPinViewInput?
-    let interactor: EnterPinInteractorInput
+    private let interactor: EnterPinInteractorInput
+    private let router: EnterPinRouterInput
 
     // MARK: - Properties
     private var pinCode = String() {
@@ -25,8 +26,9 @@ class EnterPinPresenter {
     }
 
     // MARK: - Init
-    init(interactor: EnterPinInteractorInput) {
+    init(interactor: EnterPinInteractorInput, router: EnterPinRouterInput) {
         self.interactor = interactor
+        self.router = router
     }
 
     private func updateState() {
@@ -53,10 +55,16 @@ extension EnterPinPresenter: EnterPinViewOutput {
     }
 
     func didTapContinueButton() {
-        
+        interactor.savePin(with: pinCode)
     }
 
 }
 
 // MARK: - EnterPinInteractorOutput
-extension EnterPinPresenter: EnterPinInteractorOutput {}
+extension EnterPinPresenter: EnterPinInteractorOutput {
+
+    func pinSaved() {
+        router.navigateToBlankScreen()
+    }
+
+}

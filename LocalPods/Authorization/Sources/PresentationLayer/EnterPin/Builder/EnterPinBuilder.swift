@@ -9,11 +9,13 @@
 final class EnterPinBuilder: EnterPinBuilderProtocol {
 
     static func build() -> EnterPinViewController {
-        let interactor = EnterPinInteractor()
-        let presenter = EnterPinPresenter(interactor: interactor)
+        let interactor = EnterPinInteractor(with: DIContainer.authService)
+        let router = EnterPinRouter()
+        let presenter = EnterPinPresenter(interactor: interactor, router: router)
         let viewController = EnterPinViewController(output: presenter)
 
         presenter.view = viewController
+        router.viewController = viewController
         interactor.output = presenter
 
         return viewController
