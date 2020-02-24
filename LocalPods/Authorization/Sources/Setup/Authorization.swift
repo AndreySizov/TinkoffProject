@@ -16,7 +16,7 @@ public class AuthorizationModule {
     static public func createAuthorizationFlow() -> UINavigationController {
         let rootViewController: UIViewController
         if service.isPinCodeSet() {
-            rootViewController =  EnterPinBuilder.build()
+            rootViewController = EnterPinBuilder.build()
         } else {
             rootViewController = SignInBuilder.build()
         }

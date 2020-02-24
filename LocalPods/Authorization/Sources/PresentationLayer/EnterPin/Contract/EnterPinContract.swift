@@ -22,5 +22,9 @@ protocol EnterPinViewOutput {
 }
 
 // MARK: - Interactor
-protocol EnterPinInteractorInput {}
-protocol EnterPinInteractorOutput: class {}
+protocol EnterPinInteractorInput {
+    func savePin(with text: String)
+}
+protocol EnterPinInteractorOutput: class {
+    func pinSaved()
+}

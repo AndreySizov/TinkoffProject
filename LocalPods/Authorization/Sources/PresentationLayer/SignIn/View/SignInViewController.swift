@@ -29,19 +29,17 @@ public final class SignInViewController: UIViewController {
         $0.textColor = UIColor(named: "TextColor")
         $0.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         $0.placeholder = "Введите логин"
-        $0.delegate = self
     }
     private lazy var passwordTextField = UITextField().with {
         $0.keyboardType = .numberPad
         $0.textColor = UIColor(named: "TextColor")
         $0.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         $0.placeholder = "Введите пароль"
-        $0.delegate = self
     }
     private let continueButton = UIButton().with {
         $0.backgroundColor = UIColor(named: "MainColor")
         $0.setTitle("Далее", for: .normal)
-        $0.layer.cornerRadius = 26
+        $0.layer.cornerRadius = 12
         $0.alpha = 0.4
     }
     private let checkButton = UIButton().with {
@@ -80,9 +78,25 @@ public final class SignInViewController: UIViewController {
 
     // MARK: - Binding
     private func bindObservables() {
+        loginTextField.rx.text.asObservable()
+            .distinctUntilChanged()
+            .subscribe(onNext: { [unowned self] string in
+                self.output.didEnterLogin(string)
+            }).disposed(by: disposeBag)
+
+        passwordTextField.rx.text.asObservable()
+            .distinctUntilChanged()
+            .subscribe(onNext: { [unowned self] string in
+                self.output.didEnterPassword(string)
+            }).disposed(by: disposeBag)
+
         checkButton.rx.tap.subscribe(onNext: { [unowned self] in
-            //TODO: Make output calls
             self.checkButton.isSelected = !self.checkButton.isSelected
+            self.output.didTapCheckButton(isSelected: self.checkButton.isSelected)
+        }).disposed(by: disposeBag)
+
+        continueButton.rx.tap.subscribe(onNext: { [unowned self] in
+            self.output.didTapContinueButton()
         }).disposed(by: disposeBag)
     }
 
@@ -150,6 +164,11 @@ public final class SignInViewController: UIViewController {
     }
 }
 
-extension SignInViewController: UITextFieldDelegate {}
+extension SignInViewController: SignInViewInput {
 
-extension SignInViewController: SignInViewInput {}
+    func setButtonAvailability(to isEnabled: Bool) {
+        continueButton.isUserInteractionEnabled = isEnabled
+        continueButton.alpha = isEnabled ? 1 : 0.4
+    }
+
+}
