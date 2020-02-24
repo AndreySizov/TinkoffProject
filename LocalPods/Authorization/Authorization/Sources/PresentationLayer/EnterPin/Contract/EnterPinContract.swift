@@ -12,8 +12,14 @@ protocol EnterPinBuilderProtocol: class {
 }
 
 // MARK: - View
-protocol EnterPinViewInput: class {}
-protocol EnterPinViewOutput {}
+protocol EnterPinViewInput: class {
+    func setButtonEnabled(to isEnabled: Bool)
+}
+protocol EnterPinViewOutput {
+    func didChangePinCode(with string: String?)
+    func didChangeConfirmPinCode(with string: String?)
+    func didTapContinueButton()
+}
 
 // MARK: - Interactor
 protocol EnterPinInteractorInput {}
