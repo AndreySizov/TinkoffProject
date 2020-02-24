@@ -6,9 +6,9 @@
 //  Copyright © 2020 Tinkoff. All rights reserved.
 //
 
-final class SignInBuilder: SignInBuilderProtocol {
+public final class SignInBuilder: SignInBuilderProtocol {
 
-    static func build() -> SignInViewController {
+    public static func build() -> SignInViewController {
         let interactor = SignInInteractor()
         let presenter = SignInPresenter(interactor: interactor)
         let viewController = SignInViewController(output: presenter)
