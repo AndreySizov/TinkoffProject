@@ -8,7 +8,7 @@ PODS:
   - SwiftLint (0.39.1)
 
 DEPENDENCIES:
-  - Authorization (from `Local Pods/Authorization`)
+  - Authorization (from `LocalPods/Authorization`)
   - R.swift
   - SwiftLint
 
@@ -21,15 +21,15 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Authorization:
-    :path: Local Pods/Authorization
+    :path: LocalPods/Authorization
 
 SPEC CHECKSUMS:
-  Authorization: aa5d90151d9e9215468b41ce612144dc8bd649ab
+  Authorization: de38a19dca68aa0789c1520c0ccf69ec07e93f7c
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 85de4e79c5903a788bfa6f523f9f2310d6b2808a
+PODFILE CHECKSUM: aeba30f5f544e72209be4004e02f125ec0f51775
 
 COCOAPODS: 1.8.4
