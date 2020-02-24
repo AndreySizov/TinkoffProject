@@ -5,6 +5,7 @@ target 'Authorization_Example' do
   pod 'PinLayout' , '1.8.7'
   pod 'RxSwift' , '4.5'
   pod 'RxCocoa' , '4.5'
+  pod 'Dip'
 
   target 'Authorization_Tests' do
     inherit! :search_paths

@@ -12,6 +12,7 @@ protocol IAuthorizationService {
     func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void)
     func verify(pinCode: String, completion: (Result<Void, Error>) -> Void)
     func resetPinCode()
+    func isPinCodeSet() -> Bool
 }
 
 class AuthorizationService: IAuthorizationService {

@@ -1,16 +1,39 @@
 PODS:
-  - Authorization (0.1.0)
+  - Authorization (0.1.0):
+    - KeychainAccess
+    - PinLayout
+    - RxCocoa
+    - RxSwift
+  - KeychainAccess (4.1.0)
+  - PinLayout (1.8.7)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
 
 DEPENDENCIES:
   - Authorization (from `../`)
+  - PinLayout (= 1.8.7)
+  - RxCocoa (= 4.5)
+  - RxSwift (= 4.5)
+
+SPEC REPOS:
+  trunk:
+    - KeychainAccess
+    - PinLayout
+    - RxCocoa
+    - RxSwift
 
 EXTERNAL SOURCES:
   Authorization:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Authorization: ae16e8d761cf5e5b80daa04769723d3f07e47968
+  Authorization: ecaacf5daf5297cd392caac4b52d7fc8e0d8be3b
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  PinLayout: a0722a5c8f0e0168a9c091ffe4930dabf0c8582c
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: 3945d659e63d43edce0a355ccbc255f78333cddc
+PODFILE CHECKSUM: 8d01f493576540820689a59e7993c5fd73dcf77e
 
 COCOAPODS: 1.8.4
