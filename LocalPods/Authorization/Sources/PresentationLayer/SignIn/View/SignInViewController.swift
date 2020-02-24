@@ -28,7 +28,7 @@ public final class SignInViewController: UIViewController {
         $0.keyboardType = .numberPad
         $0.textColor = UIColor(named: "TextColor")
         $0.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-        $0.placeholder = "Введите логин"
+        $0.placeholder = "Введите логин (только латинские)"
     }
     private lazy var passwordTextField = UITextField().with {
         $0.keyboardType = .numberPad
@@ -39,6 +39,7 @@ public final class SignInViewController: UIViewController {
     private let continueButton = UIButton().with {
         $0.backgroundColor = UIColor(named: "MainColor")
         $0.setTitle("Далее", for: .normal)
+        $0.setTitleColor(UIColor(named: "TextColor"), for: .normal)
         $0.layer.cornerRadius = 12
         $0.alpha = 0.4
     }

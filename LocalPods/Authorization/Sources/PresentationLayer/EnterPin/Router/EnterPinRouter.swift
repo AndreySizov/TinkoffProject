@@ -9,4 +9,17 @@
 
 import UIKit
 
-final class EnterPinRouter {}
+final class EnterPinRouter {
+
+    weak var viewController: UIViewController?
+
+}
+
+extension EnterPinRouter: EnterPinRouterInput {
+
+    func navigateToBlankScreen() {
+        let blankVC = UIViewController()
+        viewController?.navigationController?.pushViewController(blankVC, animated: true)
+    }
+
+}
