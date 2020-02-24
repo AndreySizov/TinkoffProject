@@ -2,6 +2,9 @@ use_frameworks!
 
 target 'Authorization_Example' do
   pod 'Authorization', :path => '../'
+  pod 'PinLayout' , '1.8.7'
+  pod 'RxSwift' , '4.5'
+  pod 'RxCocoa' , '4.5'
 
   target 'Authorization_Tests' do
     inherit! :search_paths
