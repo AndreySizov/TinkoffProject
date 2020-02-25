@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'Sources/**/*'
+  s.source_files = 'Authorization/Sources/**/*'
   
   s.resource_bundles = {
       'Authorization' => ['Example/Authorization/*.{xcassets,json,imageset,png,pdf,strings,stringsdict,html,otf,ttf}']
@@ -42,4 +42,5 @@ TODO: Add long description of the pod here.
   s.dependency 'RxSwift'
   s.dependency 'Dip'
   s.dependency 'RxCocoa'
+  s.dependency 'R.swift'
 end

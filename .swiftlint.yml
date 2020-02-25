@@ -6,6 +6,8 @@ excluded:
 - TinkoffProject/AppDelegate.swift
 - TinkoffProject/SceneDelegate.swift
 - LocalPods/Authorization/Example
+- LocalPods/Authorization/Authorization/Sources/R.generated
+
 
 disabled_rules:
 - trailing_whitespace
