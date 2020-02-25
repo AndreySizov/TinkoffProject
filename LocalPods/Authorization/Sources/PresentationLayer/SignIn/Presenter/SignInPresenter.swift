@@ -20,7 +20,7 @@ class SignInPresenter {
             updateState()
         }
     }
-    private var login = String(){
+    private var login = String() {
         didSet {
             updateState()
         }

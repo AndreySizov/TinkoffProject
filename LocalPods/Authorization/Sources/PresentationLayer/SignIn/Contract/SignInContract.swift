@@ -31,3 +31,8 @@ protocol SignInRouterInput {
     func navigateToEnterPin()
     func navigateToBlankScreen()
 }
+
+// MARK: - Router
+protocol EnterPinRouterInput {
+    func navigateToBlankScreen()
+}

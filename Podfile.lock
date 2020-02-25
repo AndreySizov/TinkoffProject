@@ -1,10 +1,22 @@
 PODS:
   - Authorization (0.1.0):
+    - Dip
     - KeychainAccess
+    - PinLayout
+    - RxCocoa
+    - RxSwift
+  - Dip (7.0.1)
   - KeychainAccess (4.1.0)
+  - PinLayout (1.8.13)
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
   - SwiftLint (0.39.1)
 
 DEPENDENCIES:
@@ -14,9 +26,14 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Dip
     - KeychainAccess
+    - PinLayout
     - R.swift
     - R.swift.Library
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SwiftLint
 
 EXTERNAL SOURCES:
@@ -24,10 +41,15 @@ EXTERNAL SOURCES:
     :path: LocalPods/Authorization
 
 SPEC CHECKSUMS:
-  Authorization: de38a19dca68aa0789c1520c0ccf69ec07e93f7c
+  Authorization: 7322b724cd136773eab9dc6ebd32304794b993f0
+  Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  PinLayout: e41a50260a76508b7a7fcee8955c76639adc69bc
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
 PODFILE CHECKSUM: aeba30f5f544e72209be4004e02f125ec0f51775
