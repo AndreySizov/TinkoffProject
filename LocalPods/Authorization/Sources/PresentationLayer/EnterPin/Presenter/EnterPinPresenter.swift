@@ -53,10 +53,16 @@ extension EnterPinPresenter: EnterPinViewOutput {
     }
 
     func didTapContinueButton() {
-        
+        interactor.savePin(with: pinCode)
     }
 
 }
 
 // MARK: - EnterPinInteractorOutput
-extension EnterPinPresenter: EnterPinInteractorOutput {}
+extension EnterPinPresenter: EnterPinInteractorOutput {
+
+    func pinSaved() {
+        print("!! pinsaved") // TODO: - 
+    }
+
+}

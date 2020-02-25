@@ -10,11 +10,13 @@ public final class SignInBuilder: SignInBuilderProtocol {
 
     public static func build() -> SignInViewController {
         let interactor = SignInInteractor()
-        let presenter = SignInPresenter(interactor: interactor)
+        let router = SignInRouter()
+        let presenter = SignInPresenter(interactor: interactor, router: router)
         let viewController = SignInViewController(output: presenter)
 
         presenter.view = viewController
         interactor.output = presenter
+        router.viewController = viewController
 
         return viewController
     }

@@ -9,7 +9,7 @@
 final class EnterPinBuilder: EnterPinBuilderProtocol {
 
     static func build() -> EnterPinViewController {
-        let interactor = EnterPinInteractor()
+        let interactor = EnterPinInteractor(with: DIContainer.authService)
         let presenter = EnterPinPresenter(interactor: interactor)
         let viewController = EnterPinViewController(output: presenter)
 

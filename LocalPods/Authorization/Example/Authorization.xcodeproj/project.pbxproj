@@ -28,6 +28,8 @@
 		7C186C232404269300FB6D99 /* EnterPinBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C142404269300FB6D99 /* EnterPinBuilder.swift */; };
 		7C186C242404269300FB6D99 /* EnterPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C162404269300FB6D99 /* EnterPinInteractor.swift */; };
 		7C186C252404269300FB6D99 /* EnterPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C182404269300FB6D99 /* EnterPinRouter.swift */; };
+		7CF19A1024042E1600CF95A4 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A0F24042E1600CF95A4 /* Authorization.swift */; };
+		7CF19A132404321D00CF95A4 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A122404321D00CF95A4 /* DI.swift */; };
 		B2862B306F7A47A2D13CB43A /* Pods_Authorization_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D0878CABA51F7C5798F11E /* Pods_Authorization_Example.framework */; };
 		BC4A31E9F472D06A941CE8CD /* Pods_Authorization_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94785B9209EB3D7C70019AAA /* Pods_Authorization_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		7C186C142404269300FB6D99 /* EnterPinBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinBuilder.swift; sourceTree = "<group>"; };
 		7C186C162404269300FB6D99 /* EnterPinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinInteractor.swift; sourceTree = "<group>"; };
 		7C186C182404269300FB6D99 /* EnterPinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinRouter.swift; sourceTree = "<group>"; };
+		7CF19A0F24042E1600CF95A4 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		7CF19A122404321D00CF95A4 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		94785B9209EB3D7C70019AAA /* Pods_Authorization_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authorization_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB123406783572424113A67 /* Authorization.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Authorization.podspec; path = ../Authorization.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAA48450E5AB3CB64C4C9B1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 		7327C54DEA975CEC6D402474 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				7CF19A0E24042E1600CF95A4 /* Setup */,
 				7C186B542403110800FB6D99 /* Common */,
 				7C186BFE2404269300FB6D99 /* PresentationLayer */,
 				7C186BFC2404269300FB6D99 /* Services */,
@@ -330,6 +335,16 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		7CF19A0E24042E1600CF95A4 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				7CF19A0F24042E1600CF95A4 /* Authorization.swift */,
+				7CF19A122404321D00CF95A4 /* DI.swift */,
+			);
+			name = Setup;
+			path = ../../Sources/Setup;
+			sourceTree = "<group>";
+		};
 		DD57B2EAEABCCDC6998EBB45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +497,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Authorization_Example/Pods-Authorization_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Authorization/Authorization.framework",
+				"${BUILT_PRODUCTS_DIR}/Dip/Dip.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -489,6 +506,8 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Authorization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -543,7 +562,9 @@
 				7C186C1E2404269300FB6D99 /* SignInInteractor.swift in Sources */,
 				7C186C1B2404269300FB6D99 /* SignInPresenter.swift in Sources */,
 				7C186C232404269300FB6D99 /* EnterPinBuilder.swift in Sources */,
+				7CF19A1024042E1600CF95A4 /* Authorization.swift in Sources */,
 				7C186B582403128A00FB6D99 /* UIView+Subviews.swift in Sources */,
+				7CF19A132404321D00CF95A4 /* DI.swift in Sources */,
 				7C186C1A2404269300FB6D99 /* SignInContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

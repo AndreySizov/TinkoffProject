@@ -9,4 +9,21 @@
 
 import UIKit
 
-final class SignInRouter {}
+final class SignInRouter {
+
+    weak var viewController: UIViewController?
+}
+
+extension SignInRouter: SignInRouterInput {
+
+    func navigateToBlankScreen() {
+        let vc = UIViewController()
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func navigateToEnterPin() {
+        let enterPinVC = EnterPinBuilder.build()
+        viewController?.navigationController?.pushViewController(enterPinVC, animated: true)
+    }
+    
+}
