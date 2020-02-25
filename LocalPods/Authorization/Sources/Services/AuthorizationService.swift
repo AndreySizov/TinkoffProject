@@ -9,9 +9,10 @@ import Foundation
 import KeychainAccess
 
 protocol IAuthorizationService {
-    func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void)
+    func set(pinCode: String, completion: (Result<Void, Error>) -> Void)
     func verify(pinCode: String, completion: (Result<Void, Error>) -> Void)
     func resetPinCode()
+    func isPinCodeSet() -> Bool
 }
 
 class AuthorizationService: IAuthorizationService {
@@ -21,7 +22,7 @@ class AuthorizationService: IAuthorizationService {
     private let passwordKey = "TinkoffiOS.TinkoffProject.PasswordKey"
     private let keychain = Keychain()
     
-    func set(pinCode: String, login: String, password: String, completion: (Result<Void, Error>) -> Void) {
+    func set(pinCode: String, completion: (Result<Void, Error>) -> Void) {
         do {
             try keychain.set(pinCode, key: pinCodeKey)
             try keychain.set(pinCode, key: loginKey)
