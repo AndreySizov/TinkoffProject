@@ -18,8 +18,8 @@ final class CheckPinRouter {
 extension CheckPinRouter: CheckPinRouterInput {
 
     func navigateToBlankScreen() {
-        let viewController = UIViewController()
-        viewController.navigationController?.pushViewController(viewController, animated: true)
+        let blankVC = UIViewController()
+        viewController?.navigationController?.pushViewController(blankVC, animated: true)
     }
 
     func showErrorAlert() {
