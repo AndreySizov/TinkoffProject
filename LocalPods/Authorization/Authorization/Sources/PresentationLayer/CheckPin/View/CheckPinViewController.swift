@@ -20,14 +20,14 @@ class CheckPinViewController: UIViewController {
     }
     private lazy var pinTextField = UITextField().with {
         $0.keyboardType = .numberPad
-        $0.textColor = UIColor(named: "TextColor")
+        $0.textColor = R.color.textColor()
         $0.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         $0.placeholder = "Ваш пин-код"
     }
     private let continueButton = UIButton().with {
-        $0.backgroundColor = UIColor(named: "MainColor")
+        $0.backgroundColor = R.color.mainColor()
         $0.setTitle("Далее", for: .normal)
-        $0.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+        $0.setTitleColor(R.color.textColor(), for: .normal)
         $0.layer.cornerRadius = 12
         $0.alpha = 0.4
     }
@@ -43,6 +43,11 @@ class CheckPinViewController: UIViewController {
     init(output: CheckPinViewOutput) {
         self.output = output
         super.init(nibName: nil, bundle: nil)
+    }
+
+    // MARK: - Deinit
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
     @available(*, unavailable)
@@ -70,6 +75,16 @@ class CheckPinViewController: UIViewController {
             .subscribe(onNext: { [unowned self] string in
                 self.output.didChangePinCode(with: string)
             }).disposed(by: disposeBag)
+
+        let notifier = NotificationCenter.default
+        notifier.addObserver(self,
+                             selector: #selector(keyboardWillShowNotification(_:)),
+                             name: NSNotification.Name.UIKeyboardWillShow,
+                             object: nil)
+        notifier.addObserver(self,
+                             selector: #selector(keyboardWillHideNotification(_:)),
+                             name: NSNotification.Name.UIKeyboardWillHide,
+                             object: nil)
     }
 
     // MARK: - Layout
@@ -99,7 +114,7 @@ class CheckPinViewController: UIViewController {
         continueButton.pin
             .height(continueButtonHeight)
             .width(continueButtonWidth)
-            .bottom(keyboardHeight)
+            .bottom(keyboardHeight + 20)
             .marginBottom(40)
             .hCenter()
     }
@@ -114,7 +129,23 @@ class CheckPinViewController: UIViewController {
     }
 
     private func configureView() {
-        view.backgroundColor = UIColor(named: "BackgroundColor")
+        view.backgroundColor = R.color.backgroundColor()
+    }
+
+    @objc
+    private func keyboardWillShowNotification(_ notification: NSNotification) {
+        guard let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+
+        self.keyboardHeight = keyboardSize.height
+        view.setNeedsLayout()
+    }
+
+    @objc
+    private func keyboardWillHideNotification(_ notification: NSNotification) {
+        self.keyboardHeight = 0
+        view.setNeedsLayout()
     }
 
 }
