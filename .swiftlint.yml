@@ -6,7 +6,7 @@ excluded:
 - TinkoffProject/AppDelegate.swift
 - TinkoffProject/SceneDelegate.swift
 - LocalPods/Authorization/Example
-- LocalPods/Authorization/Authorization/Sources/R.generated
+- LocalPods/Authorization/Authorization/Sources/R.generated.swift
 
 
 disabled_rules:
