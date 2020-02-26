@@ -29,11 +29,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'Sources/**/*'
+  s.source_files = 'Authorization/Sources/**/*'
   
-  s.resource_bundles = {
-      'Authorization' => ['Example/Authorization/*.{xcassets,json,imageset,png,pdf,strings,stringsdict,html,otf,ttf}']
-  }
+  s.resource = 'Example/Authorization/*.{xcassets,json,imageset,png,pdf,strings,stringsdict,html,otf,ttf}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
@@ -42,4 +40,18 @@ TODO: Add long description of the pod here.
   s.dependency 'RxSwift'
   s.dependency 'Dip'
   s.dependency 'RxCocoa'
+  s.dependency 'R.swift'
+
+  r_swift_script = '"${PODS_ROOT}/R.swift/rswift" generate "${PODS_TARGET_SRCROOT}/Authorization/Sources/R.generated.swift"'
+  r_input = "${TEMP_DIR}/rswift-lastrun"
+  r_output = "${PODS_TARGET_SRCROOT}/Authorization/Sources/R.generated.swift"
+  s.script_phases = [
+      {
+          :name => 'R.swift',
+          :script => r_swift_script,
+          :input_files => [r_input],
+          :output_files => [r_output],
+          :execution_position => :before_compile
+      }
+  ]
 end

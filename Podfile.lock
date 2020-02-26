@@ -3,6 +3,7 @@ PODS:
     - Dip
     - KeychainAccess
     - PinLayout
+    - R.swift
     - RxCocoa
     - RxSwift
   - Dip (7.0.1)
@@ -41,7 +42,7 @@ EXTERNAL SOURCES:
     :path: LocalPods/Authorization
 
 SPEC CHECKSUMS:
-  Authorization: 7322b724cd136773eab9dc6ebd32304794b993f0
+  Authorization: 86860c513ac69804d641ee6b1679e5b8aa5d8b4e
   Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
   PinLayout: e41a50260a76508b7a7fcee8955c76639adc69bc

@@ -114,7 +114,7 @@ class CheckPinViewController: UIViewController {
     }
 
     private func configureView() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "BackgroundColor")
     }
 
 }

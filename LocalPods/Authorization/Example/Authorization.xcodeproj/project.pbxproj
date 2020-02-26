@@ -15,27 +15,28 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7C186B562403112200FB6D99 /* NSObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186B552403112200FB6D99 /* NSObjectProtocol.swift */; };
 		7C186B582403128A00FB6D99 /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186B572403128A00FB6D99 /* UIView+Subviews.swift */; };
-		7C186C192404269300FB6D99 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186BFD2404269300FB6D99 /* AuthorizationService.swift */; };
-		7C186C1A2404269300FB6D99 /* SignInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C012404269300FB6D99 /* SignInContract.swift */; };
-		7C186C1B2404269300FB6D99 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C032404269300FB6D99 /* SignInPresenter.swift */; };
-		7C186C1C2404269300FB6D99 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C052404269300FB6D99 /* SignInViewController.swift */; };
-		7C186C1D2404269300FB6D99 /* SignInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C072404269300FB6D99 /* SignInBuilder.swift */; };
-		7C186C1E2404269300FB6D99 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C092404269300FB6D99 /* SignInInteractor.swift */; };
-		7C186C1F2404269300FB6D99 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C0B2404269300FB6D99 /* SignInRouter.swift */; };
-		7C186C202404269300FB6D99 /* EnterPinContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C0E2404269300FB6D99 /* EnterPinContract.swift */; };
-		7C186C212404269300FB6D99 /* EnterPinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C102404269300FB6D99 /* EnterPinPresenter.swift */; };
-		7C186C222404269300FB6D99 /* EnterPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C122404269300FB6D99 /* EnterPinViewController.swift */; };
-		7C186C232404269300FB6D99 /* EnterPinBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C142404269300FB6D99 /* EnterPinBuilder.swift */; };
-		7C186C242404269300FB6D99 /* EnterPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C162404269300FB6D99 /* EnterPinInteractor.swift */; };
-		7C186C252404269300FB6D99 /* EnterPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C186C182404269300FB6D99 /* EnterPinRouter.swift */; };
-		7CF19A1024042E1600CF95A4 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A0F24042E1600CF95A4 /* Authorization.swift */; };
-		7CF19A132404321D00CF95A4 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A122404321D00CF95A4 /* DI.swift */; };
-		7CF19A5C24045ABE00CF95A4 /* CheckPinContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A4C24045ABE00CF95A4 /* CheckPinContract.swift */; };
-		7CF19A5D24045ABE00CF95A4 /* CheckPinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A4E24045ABE00CF95A4 /* CheckPinPresenter.swift */; };
-		7CF19A5E24045ABE00CF95A4 /* CheckPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A5024045ABE00CF95A4 /* CheckPinViewController.swift */; };
-		7CF19A6224045ABE00CF95A4 /* CheckPinBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A5724045ABE00CF95A4 /* CheckPinBuilder.swift */; };
-		7CF19A6324045ABE00CF95A4 /* CheckPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A5924045ABE00CF95A4 /* CheckPinInteractor.swift */; };
-		7CF19A6424045ABE00CF95A4 /* CheckPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A5B24045ABE00CF95A4 /* CheckPinRouter.swift */; };
+		7C7201F92405AED200E1EB03 /* CheckPinContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201CF2405AED200E1EB03 /* CheckPinContract.swift */; };
+		7C7201FA2405AED200E1EB03 /* CheckPinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201D12405AED200E1EB03 /* CheckPinPresenter.swift */; };
+		7C7201FB2405AED200E1EB03 /* CheckPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201D32405AED200E1EB03 /* CheckPinViewController.swift */; };
+		7C7201FC2405AED200E1EB03 /* CheckPinBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201D52405AED200E1EB03 /* CheckPinBuilder.swift */; };
+		7C7201FD2405AED200E1EB03 /* CheckPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201D72405AED200E1EB03 /* CheckPinInteractor.swift */; };
+		7C7201FE2405AED200E1EB03 /* CheckPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201D92405AED200E1EB03 /* CheckPinRouter.swift */; };
+		7C7201FF2405AED200E1EB03 /* SignInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201DC2405AED200E1EB03 /* SignInContract.swift */; };
+		7C7202002405AED200E1EB03 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201DE2405AED200E1EB03 /* SignInPresenter.swift */; };
+		7C7202012405AED200E1EB03 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201E02405AED200E1EB03 /* SignInViewController.swift */; };
+		7C7202022405AED200E1EB03 /* SignInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201E22405AED200E1EB03 /* SignInBuilder.swift */; };
+		7C7202032405AED200E1EB03 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201E42405AED200E1EB03 /* SignInInteractor.swift */; };
+		7C7202042405AED200E1EB03 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201E62405AED200E1EB03 /* SignInRouter.swift */; };
+		7C7202052405AED200E1EB03 /* EnterPinContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201E92405AED200E1EB03 /* EnterPinContract.swift */; };
+		7C7202062405AED200E1EB03 /* EnterPinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201EB2405AED200E1EB03 /* EnterPinPresenter.swift */; };
+		7C7202072405AED200E1EB03 /* EnterPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201ED2405AED200E1EB03 /* EnterPinViewController.swift */; };
+		7C7202082405AED200E1EB03 /* EnterPinBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201EF2405AED200E1EB03 /* EnterPinBuilder.swift */; };
+		7C7202092405AED200E1EB03 /* EnterPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201F12405AED200E1EB03 /* EnterPinInteractor.swift */; };
+		7C72020A2405AED200E1EB03 /* EnterPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201F32405AED200E1EB03 /* EnterPinRouter.swift */; };
+		7C72020B2405AED200E1EB03 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201F52405AED200E1EB03 /* Authorization.swift */; };
+		7C72020C2405AED200E1EB03 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7201F62405AED200E1EB03 /* DI.swift */; };
+		7C72020F2405AEFA00E1EB03 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C72020E2405AEFA00E1EB03 /* AuthorizationService.swift */; };
+		7C7202112405AF6700E1EB03 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7202102405AF6700E1EB03 /* R.generated.swift */; };
 		B2862B306F7A47A2D13CB43A /* Pods_Authorization_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D0878CABA51F7C5798F11E /* Pods_Authorization_Example.framework */; };
 		BC4A31E9F472D06A941CE8CD /* Pods_Authorization_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94785B9209EB3D7C70019AAA /* Pods_Authorization_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -66,27 +67,28 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7C186B552403112200FB6D99 /* NSObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocol.swift; sourceTree = "<group>"; };
 		7C186B572403128A00FB6D99 /* UIView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
-		7C186BFD2404269300FB6D99 /* AuthorizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
-		7C186C012404269300FB6D99 /* SignInContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInContract.swift; sourceTree = "<group>"; };
-		7C186C032404269300FB6D99 /* SignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
-		7C186C052404269300FB6D99 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		7C186C072404269300FB6D99 /* SignInBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInBuilder.swift; sourceTree = "<group>"; };
-		7C186C092404269300FB6D99 /* SignInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
-		7C186C0B2404269300FB6D99 /* SignInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
-		7C186C0E2404269300FB6D99 /* EnterPinContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinContract.swift; sourceTree = "<group>"; };
-		7C186C102404269300FB6D99 /* EnterPinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinPresenter.swift; sourceTree = "<group>"; };
-		7C186C122404269300FB6D99 /* EnterPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinViewController.swift; sourceTree = "<group>"; };
-		7C186C142404269300FB6D99 /* EnterPinBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinBuilder.swift; sourceTree = "<group>"; };
-		7C186C162404269300FB6D99 /* EnterPinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinInteractor.swift; sourceTree = "<group>"; };
-		7C186C182404269300FB6D99 /* EnterPinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinRouter.swift; sourceTree = "<group>"; };
-		7CF19A0F24042E1600CF95A4 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
-		7CF19A122404321D00CF95A4 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
-		7CF19A4C24045ABE00CF95A4 /* CheckPinContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinContract.swift; sourceTree = "<group>"; };
-		7CF19A4E24045ABE00CF95A4 /* CheckPinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinPresenter.swift; sourceTree = "<group>"; };
-		7CF19A5024045ABE00CF95A4 /* CheckPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinViewController.swift; sourceTree = "<group>"; };
-		7CF19A5724045ABE00CF95A4 /* CheckPinBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinBuilder.swift; sourceTree = "<group>"; };
-		7CF19A5924045ABE00CF95A4 /* CheckPinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinInteractor.swift; sourceTree = "<group>"; };
-		7CF19A5B24045ABE00CF95A4 /* CheckPinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinRouter.swift; sourceTree = "<group>"; };
+		7C7201CF2405AED200E1EB03 /* CheckPinContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinContract.swift; sourceTree = "<group>"; };
+		7C7201D12405AED200E1EB03 /* CheckPinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinPresenter.swift; sourceTree = "<group>"; };
+		7C7201D32405AED200E1EB03 /* CheckPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinViewController.swift; sourceTree = "<group>"; };
+		7C7201D52405AED200E1EB03 /* CheckPinBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinBuilder.swift; sourceTree = "<group>"; };
+		7C7201D72405AED200E1EB03 /* CheckPinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinInteractor.swift; sourceTree = "<group>"; };
+		7C7201D92405AED200E1EB03 /* CheckPinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPinRouter.swift; sourceTree = "<group>"; };
+		7C7201DC2405AED200E1EB03 /* SignInContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInContract.swift; sourceTree = "<group>"; };
+		7C7201DE2405AED200E1EB03 /* SignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		7C7201E02405AED200E1EB03 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7C7201E22405AED200E1EB03 /* SignInBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInBuilder.swift; sourceTree = "<group>"; };
+		7C7201E42405AED200E1EB03 /* SignInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		7C7201E62405AED200E1EB03 /* SignInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		7C7201E92405AED200E1EB03 /* EnterPinContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinContract.swift; sourceTree = "<group>"; };
+		7C7201EB2405AED200E1EB03 /* EnterPinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinPresenter.swift; sourceTree = "<group>"; };
+		7C7201ED2405AED200E1EB03 /* EnterPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinViewController.swift; sourceTree = "<group>"; };
+		7C7201EF2405AED200E1EB03 /* EnterPinBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinBuilder.swift; sourceTree = "<group>"; };
+		7C7201F12405AED200E1EB03 /* EnterPinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinInteractor.swift; sourceTree = "<group>"; };
+		7C7201F32405AED200E1EB03 /* EnterPinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPinRouter.swift; sourceTree = "<group>"; };
+		7C7201F52405AED200E1EB03 /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		7C7201F62405AED200E1EB03 /* DI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		7C72020E2405AEFA00E1EB03 /* AuthorizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		7C7202102405AF6700E1EB03 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = ../../Authorization/Sources/R.generated.swift; sourceTree = "<group>"; };
 		94785B9209EB3D7C70019AAA /* Pods_Authorization_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authorization_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB123406783572424113A67 /* Authorization.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Authorization.podspec; path = ../Authorization.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAA48450E5AB3CB64C4C9B1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -189,10 +191,10 @@
 		7327C54DEA975CEC6D402474 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				7CF19A0E24042E1600CF95A4 /* Setup */,
+				7C72020D2405AEFA00E1EB03 /* Services */,
+				7C7201CC2405AED200E1EB03 /* PresentationLayer */,
+				7C7201F42405AED200E1EB03 /* Setup */,
 				7C186B542403110800FB6D99 /* Common */,
-				7C186BFE2404269300FB6D99 /* PresentationLayer */,
-				7C186BFC2404269300FB6D99 /* Services */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -202,221 +204,222 @@
 			children = (
 				7C186B552403112200FB6D99 /* NSObjectProtocol.swift */,
 				7C186B572403128A00FB6D99 /* UIView+Subviews.swift */,
+				7C7202102405AF6700E1EB03 /* R.generated.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
 		};
-		7C186BFC2404269300FB6D99 /* Services */ = {
+		7C7201CC2405AED200E1EB03 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				7C186BFD2404269300FB6D99 /* AuthorizationService.swift */,
-			);
-			name = Services;
-			path = ../../Sources/Services;
-			sourceTree = "<group>";
-		};
-		7C186BFE2404269300FB6D99 /* PresentationLayer */ = {
-			isa = PBXGroup;
-			children = (
-				7CF19A4A24045ABE00CF95A4 /* CheckPin */,
-				7C186BFF2404269300FB6D99 /* SignIn */,
-				7C186C0C2404269300FB6D99 /* EnterPin */,
+				7C7201CD2405AED200E1EB03 /* CheckPin */,
+				7C7201DA2405AED200E1EB03 /* SignIn */,
+				7C7201E72405AED200E1EB03 /* EnterPin */,
 			);
 			name = PresentationLayer;
-			path = ../../Sources/PresentationLayer;
+			path = ../../Authorization/Sources/PresentationLayer;
 			sourceTree = "<group>";
 		};
-		7C186BFF2404269300FB6D99 /* SignIn */ = {
+		7C7201CD2405AED200E1EB03 /* CheckPin */ = {
 			isa = PBXGroup;
 			children = (
-				7C186C002404269300FB6D99 /* Contract */,
-				7C186C022404269300FB6D99 /* Presenter */,
-				7C186C042404269300FB6D99 /* View */,
-				7C186C062404269300FB6D99 /* Builder */,
-				7C186C082404269300FB6D99 /* Interactor */,
-				7C186C0A2404269300FB6D99 /* Router */,
-			);
-			path = SignIn;
-			sourceTree = "<group>";
-		};
-		7C186C002404269300FB6D99 /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C012404269300FB6D99 /* SignInContract.swift */,
-			);
-			path = Contract;
-			sourceTree = "<group>";
-		};
-		7C186C022404269300FB6D99 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C032404269300FB6D99 /* SignInPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		7C186C042404269300FB6D99 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C052404269300FB6D99 /* SignInViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7C186C062404269300FB6D99 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C072404269300FB6D99 /* SignInBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		7C186C082404269300FB6D99 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C092404269300FB6D99 /* SignInInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		7C186C0A2404269300FB6D99 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C0B2404269300FB6D99 /* SignInRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		7C186C0C2404269300FB6D99 /* EnterPin */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C0D2404269300FB6D99 /* Contract */,
-				7C186C0F2404269300FB6D99 /* Presenter */,
-				7C186C112404269300FB6D99 /* View */,
-				7C186C132404269300FB6D99 /* Builder */,
-				7C186C152404269300FB6D99 /* Interactor */,
-				7C186C172404269300FB6D99 /* Router */,
-			);
-			path = EnterPin;
-			sourceTree = "<group>";
-		};
-		7C186C0D2404269300FB6D99 /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C0E2404269300FB6D99 /* EnterPinContract.swift */,
-			);
-			path = Contract;
-			sourceTree = "<group>";
-		};
-		7C186C0F2404269300FB6D99 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C102404269300FB6D99 /* EnterPinPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		7C186C112404269300FB6D99 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C122404269300FB6D99 /* EnterPinViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7C186C132404269300FB6D99 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C142404269300FB6D99 /* EnterPinBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		7C186C152404269300FB6D99 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C162404269300FB6D99 /* EnterPinInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		7C186C172404269300FB6D99 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				7C186C182404269300FB6D99 /* EnterPinRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		7CF19A0E24042E1600CF95A4 /* Setup */ = {
-			isa = PBXGroup;
-			children = (
-				7CF19A0F24042E1600CF95A4 /* Authorization.swift */,
-				7CF19A122404321D00CF95A4 /* DI.swift */,
-			);
-			name = Setup;
-			path = ../../Sources/Setup;
-			sourceTree = "<group>";
-		};
-		7CF19A4A24045ABE00CF95A4 /* CheckPin */ = {
-			isa = PBXGroup;
-			children = (
-				7CF19A4B24045ABE00CF95A4 /* Contract */,
-				7CF19A4D24045ABE00CF95A4 /* Presenter */,
-				7CF19A4F24045ABE00CF95A4 /* View */,
-				7CF19A5624045ABE00CF95A4 /* Builder */,
-				7CF19A5824045ABE00CF95A4 /* Interactor */,
-				7CF19A5A24045ABE00CF95A4 /* Router */,
+				7C7201CE2405AED200E1EB03 /* Contract */,
+				7C7201D02405AED200E1EB03 /* Presenter */,
+				7C7201D22405AED200E1EB03 /* View */,
+				7C7201D42405AED200E1EB03 /* Builder */,
+				7C7201D62405AED200E1EB03 /* Interactor */,
+				7C7201D82405AED200E1EB03 /* Router */,
 			);
 			path = CheckPin;
 			sourceTree = "<group>";
 		};
-		7CF19A4B24045ABE00CF95A4 /* Contract */ = {
+		7C7201CE2405AED200E1EB03 /* Contract */ = {
 			isa = PBXGroup;
 			children = (
-				7CF19A4C24045ABE00CF95A4 /* CheckPinContract.swift */,
+				7C7201CF2405AED200E1EB03 /* CheckPinContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
 		};
-		7CF19A4D24045ABE00CF95A4 /* Presenter */ = {
+		7C7201D02405AED200E1EB03 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				7CF19A4E24045ABE00CF95A4 /* CheckPinPresenter.swift */,
+				7C7201D12405AED200E1EB03 /* CheckPinPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		7CF19A4F24045ABE00CF95A4 /* View */ = {
+		7C7201D22405AED200E1EB03 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7CF19A5024045ABE00CF95A4 /* CheckPinViewController.swift */,
+				7C7201D32405AED200E1EB03 /* CheckPinViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		7CF19A5624045ABE00CF95A4 /* Builder */ = {
+		7C7201D42405AED200E1EB03 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				7CF19A5724045ABE00CF95A4 /* CheckPinBuilder.swift */,
+				7C7201D52405AED200E1EB03 /* CheckPinBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
 		};
-		7CF19A5824045ABE00CF95A4 /* Interactor */ = {
+		7C7201D62405AED200E1EB03 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				7CF19A5924045ABE00CF95A4 /* CheckPinInteractor.swift */,
+				7C7201D72405AED200E1EB03 /* CheckPinInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		7CF19A5A24045ABE00CF95A4 /* Router */ = {
+		7C7201D82405AED200E1EB03 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				7CF19A5B24045ABE00CF95A4 /* CheckPinRouter.swift */,
+				7C7201D92405AED200E1EB03 /* CheckPinRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		7C7201DA2405AED200E1EB03 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201DB2405AED200E1EB03 /* Contract */,
+				7C7201DD2405AED200E1EB03 /* Presenter */,
+				7C7201DF2405AED200E1EB03 /* View */,
+				7C7201E12405AED200E1EB03 /* Builder */,
+				7C7201E32405AED200E1EB03 /* Interactor */,
+				7C7201E52405AED200E1EB03 /* Router */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		7C7201DB2405AED200E1EB03 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201DC2405AED200E1EB03 /* SignInContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		7C7201DD2405AED200E1EB03 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201DE2405AED200E1EB03 /* SignInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C7201DF2405AED200E1EB03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201E02405AED200E1EB03 /* SignInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C7201E12405AED200E1EB03 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201E22405AED200E1EB03 /* SignInBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		7C7201E32405AED200E1EB03 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201E42405AED200E1EB03 /* SignInInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7C7201E52405AED200E1EB03 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201E62405AED200E1EB03 /* SignInRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7C7201E72405AED200E1EB03 /* EnterPin */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201E82405AED200E1EB03 /* Contract */,
+				7C7201EA2405AED200E1EB03 /* Presenter */,
+				7C7201EC2405AED200E1EB03 /* View */,
+				7C7201EE2405AED200E1EB03 /* Builder */,
+				7C7201F02405AED200E1EB03 /* Interactor */,
+				7C7201F22405AED200E1EB03 /* Router */,
+			);
+			path = EnterPin;
+			sourceTree = "<group>";
+		};
+		7C7201E82405AED200E1EB03 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201E92405AED200E1EB03 /* EnterPinContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		7C7201EA2405AED200E1EB03 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201EB2405AED200E1EB03 /* EnterPinPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C7201EC2405AED200E1EB03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201ED2405AED200E1EB03 /* EnterPinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C7201EE2405AED200E1EB03 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201EF2405AED200E1EB03 /* EnterPinBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		7C7201F02405AED200E1EB03 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201F12405AED200E1EB03 /* EnterPinInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7C7201F22405AED200E1EB03 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201F32405AED200E1EB03 /* EnterPinRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7C7201F42405AED200E1EB03 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				7C7201F52405AED200E1EB03 /* Authorization.swift */,
+				7C7201F62405AED200E1EB03 /* DI.swift */,
+			);
+			name = Setup;
+			path = ../../Authorization/Sources/Setup;
+			sourceTree = "<group>";
+		};
+		7C72020D2405AEFA00E1EB03 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7C72020E2405AEFA00E1EB03 /* AuthorizationService.swift */,
+			);
+			name = Services;
+			path = ../../Authorization/Sources/Services;
 			sourceTree = "<group>";
 		};
 		DD57B2EAEABCCDC6998EBB45 /* Pods */ = {
@@ -447,10 +450,12 @@
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Authorization_Example" */;
 			buildPhases = (
 				1CA8D5827E2961541AFCF638 /* [CP] Check Pods Manifest.lock */,
+				7C7201C82405AB4700E1EB03 /* R.swift */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				E12213AA0463AC9C69FDD5B1 /* [CP] Embed Pods Frameworks */,
+				992E909AFAEB15007DB088FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -564,6 +569,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7C7201C82405AB4700E1EB03 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		992E909AFAEB15007DB088FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Authorization_Example/Pods-Authorization_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Authorization/Authorization.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Authorization.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Authorization_Example/Pods-Authorization_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E12213AA0463AC9C69FDD5B1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,19 +614,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Authorization_Example/Pods-Authorization_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Authorization/Authorization.framework",
 				"${BUILT_PRODUCTS_DIR}/Dip/Dip.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Authorization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -621,31 +664,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CF19A5D24045ABE00CF95A4 /* CheckPinPresenter.swift in Sources */,
-				7CF19A6424045ABE00CF95A4 /* CheckPinRouter.swift in Sources */,
-				7C186C202404269300FB6D99 /* EnterPinContract.swift in Sources */,
-				7C186C222404269300FB6D99 /* EnterPinViewController.swift in Sources */,
+				7C7202042405AED200E1EB03 /* SignInRouter.swift in Sources */,
+				7C72020F2405AEFA00E1EB03 /* AuthorizationService.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				7C186C242404269300FB6D99 /* EnterPinInteractor.swift in Sources */,
-				7CF19A5C24045ABE00CF95A4 /* CheckPinContract.swift in Sources */,
-				7C186C192404269300FB6D99 /* AuthorizationService.swift in Sources */,
-				7C186C1D2404269300FB6D99 /* SignInBuilder.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				7C7202062405AED200E1EB03 /* EnterPinPresenter.swift in Sources */,
+				7C7201FC2405AED200E1EB03 /* CheckPinBuilder.swift in Sources */,
+				7C7202002405AED200E1EB03 /* SignInPresenter.swift in Sources */,
+				7C7202092405AED200E1EB03 /* EnterPinInteractor.swift in Sources */,
+				7C7201FF2405AED200E1EB03 /* SignInContract.swift in Sources */,
+				7C7202072405AED200E1EB03 /* EnterPinViewController.swift in Sources */,
 				7C186B562403112200FB6D99 /* NSObjectProtocol.swift in Sources */,
-				7CF19A6224045ABE00CF95A4 /* CheckPinBuilder.swift in Sources */,
-				7C186C1C2404269300FB6D99 /* SignInViewController.swift in Sources */,
-				7CF19A5E24045ABE00CF95A4 /* CheckPinViewController.swift in Sources */,
-				7C186C1F2404269300FB6D99 /* SignInRouter.swift in Sources */,
-				7C186C252404269300FB6D99 /* EnterPinRouter.swift in Sources */,
-				7C186C212404269300FB6D99 /* EnterPinPresenter.swift in Sources */,
-				7C186C1E2404269300FB6D99 /* SignInInteractor.swift in Sources */,
-				7C186C1B2404269300FB6D99 /* SignInPresenter.swift in Sources */,
-				7C186C232404269300FB6D99 /* EnterPinBuilder.swift in Sources */,
-				7CF19A1024042E1600CF95A4 /* Authorization.swift in Sources */,
-				7CF19A6324045ABE00CF95A4 /* CheckPinInteractor.swift in Sources */,
+				7C7202082405AED200E1EB03 /* EnterPinBuilder.swift in Sources */,
+				7C7202052405AED200E1EB03 /* EnterPinContract.swift in Sources */,
 				7C186B582403128A00FB6D99 /* UIView+Subviews.swift in Sources */,
-				7CF19A132404321D00CF95A4 /* DI.swift in Sources */,
-				7C186C1A2404269300FB6D99 /* SignInContract.swift in Sources */,
+				7C72020B2405AED200E1EB03 /* Authorization.swift in Sources */,
+				7C7202012405AED200E1EB03 /* SignInViewController.swift in Sources */,
+				7C72020C2405AED200E1EB03 /* DI.swift in Sources */,
+				7C7201F92405AED200E1EB03 /* CheckPinContract.swift in Sources */,
+				7C7201FA2405AED200E1EB03 /* CheckPinPresenter.swift in Sources */,
+				7C7202112405AF6700E1EB03 /* R.generated.swift in Sources */,
+				7C7201FE2405AED200E1EB03 /* CheckPinRouter.swift in Sources */,
+				7C7202022405AED200E1EB03 /* SignInBuilder.swift in Sources */,
+				7C7202032405AED200E1EB03 /* SignInInteractor.swift in Sources */,
+				7C72020A2405AED200E1EB03 /* EnterPinRouter.swift in Sources */,
+				7C7201FD2405AED200E1EB03 /* CheckPinInteractor.swift in Sources */,
+				7C7201FB2405AED200E1EB03 /* CheckPinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,9 @@
 //
-//  SignInViewController.swift
-//  Authorization_Example
+//  EnterPinViewController.swift
+//  Authorization
 //
-//  Created by Oleg on 24.02.2020.
-//  Copyright © 2020 CocoaPods. All rights reserved.
+//  Created by Oleg Sinev on 24/02/2020.
+//  Copyright © 2020 Tinkoff. All rights reserved.
 //
 
 import UIKit
@@ -11,54 +11,49 @@ import PinLayout
 import RxSwift
 import RxCocoa
 
-public final class SignInViewController: UIViewController {
+class EnterPinViewController: UIViewController {
 
     // MARK: - Subviews
     private let titleLabel = UILabel().with {
         $0.font = UIFont.systemFont(ofSize: 32, weight: .bold)
-        $0.text = "Введите логин"
+        $0.text = "Введите пин"
         $0.textColor = .black
     }
     private let subtitleLabel = UILabel().with {
         $0.font = UIFont.systemFont(ofSize: 17, weight: .regular)
-        $0.text = "и пароль"
+        $0.text = "и подтвердите его"
         $0.textColor = .black
     }
-    private lazy var loginTextField = UITextField().with {
+    private lazy var pinTextField = UITextField().with {
         $0.keyboardType = .numberPad
-        $0.textColor = UIColor(named: "TextColor")
+        $0.textColor =  R.color.textColor()
         $0.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-        $0.placeholder = "Введите логин (только латинские)"
+        $0.placeholder = "Введите пин"
+        $0.textContentType = .password
+        $0.isSecureTextEntry = true
     }
-    private lazy var passwordTextField = UITextField().with {
+    private lazy var confirmPinTextField = UITextField().with {
         $0.keyboardType = .numberPad
-        $0.textColor = UIColor(named: "TextColor")
+        $0.textContentType = .password
+        $0.isSecureTextEntry = true
+        $0.textColor =  R.color.textColor()
         $0.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-        $0.placeholder = "Введите пароль"
+        $0.placeholder = "Подтвердите пин"
     }
     private let continueButton = UIButton().with {
-        $0.backgroundColor = UIColor(named: "MainColor")
-        $0.setTitle("Далее", for: .normal)
+        $0.backgroundColor =  R.color.mainColor()
         $0.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+        $0.setTitle("Далее", for: .normal)
         $0.layer.cornerRadius = 12
         $0.alpha = 0.4
+        $0.isUserInteractionEnabled = false
     }
-    private let checkButton = UIButton().with {
-        $0.setTitleColor(UIColor(named: "TextColor"), for: .normal)
-        $0.setTitle("Задать пин", for: .normal)
-        $0.setImage(UIImage(named: "Unchecked"), for: .normal)
-        $0.setImage(UIImage(named: "Checked"), for: .selected)
-    }
-
-    // MARK: - Protocol Properties
-    private let output: SignInViewOutput
 
     // MARK: - Properties
-    private var keyboardHeight: CGFloat = 0
-    private let disposeBag = DisposeBag()
+    let output: EnterPinViewOutput
 
     // MARK: - Init
-    init(output: SignInViewOutput) {
+    init(output: EnterPinViewOutput) {
         self.output = output
         super.init(nibName: nil, bundle: nil)
     }
@@ -68,8 +63,12 @@ public final class SignInViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Properties
+    private var keyboardHeight: CGFloat = 0
+    private let disposeBag = DisposeBag()
+
     // MARK: Life cycle
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         addSubviews()
@@ -79,22 +78,17 @@ public final class SignInViewController: UIViewController {
 
     // MARK: - Binding
     private func bindObservables() {
-        loginTextField.rx.text.asObservable()
+        pinTextField.rx.text.asObservable()
             .distinctUntilChanged()
             .subscribe(onNext: { [unowned self] string in
-                self.output.didEnterLogin(string)
+                self.output.didChangePinCode(with: string)
             }).disposed(by: disposeBag)
 
-        passwordTextField.rx.text.asObservable()
+        confirmPinTextField.rx.text.asObservable()
             .distinctUntilChanged()
             .subscribe(onNext: { [unowned self] string in
-                self.output.didEnterPassword(string)
+                self.output.didChangeConfirmPinCode(with: string)
             }).disposed(by: disposeBag)
-
-        checkButton.rx.tap.subscribe(onNext: { [unowned self] in
-            self.checkButton.isSelected = !self.checkButton.isSelected
-            self.output.didTapCheckButton(isSelected: self.checkButton.isSelected)
-        }).disposed(by: disposeBag)
 
         continueButton.rx.tap.subscribe(onNext: { [unowned self] in
             self.output.didTapContinueButton()
@@ -102,7 +96,7 @@ public final class SignInViewController: UIViewController {
     }
 
     // MARK: - Layout
-    override public func viewWillLayoutSubviews() {
+    override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
 
         layout()
@@ -124,21 +118,16 @@ public final class SignInViewController: UIViewController {
             .marginTop(8)
             .sizeToFit()
 
-        loginTextField.pin
+        pinTextField.pin
             .height(textFieldHeight)
             .horizontally(16)
             .below(of: subtitleLabel)
             .marginTop(16)
 
-        passwordTextField.pin
+        confirmPinTextField.pin
             .height(textFieldHeight)
             .horizontally(16)
-            .below(of: loginTextField)
-
-        checkButton.pin
-            .height(30)
-            .sizeToFit(.height)
-            .below(of: passwordTextField, aligned: .left)
+            .below(of: pinTextField)
 
         continueButton.pin
             .height(continueButtonHeight)
@@ -151,23 +140,24 @@ public final class SignInViewController: UIViewController {
     // MARK: - Private methods
     private func addSubviews() {
         view.addSubviews([
-            loginTextField,
-            passwordTextField,
+            pinTextField,
+            confirmPinTextField,
             titleLabel,
             subtitleLabel,
             continueButton,
-            checkButton
         ])
     }
 
     private func configureView() {
         view.backgroundColor = UIColor(named: "BackgroundColor")
     }
+
 }
 
-extension SignInViewController: SignInViewInput {
+// MARK: - EnterPinViewInput
+extension EnterPinViewController: EnterPinViewInput {
 
-    func setButtonAvailability(to isEnabled: Bool) {
+    func setButtonEnabled(to isEnabled: Bool) {
         continueButton.isUserInteractionEnabled = isEnabled
         continueButton.alpha = isEnabled ? 1 : 0.4
     }
