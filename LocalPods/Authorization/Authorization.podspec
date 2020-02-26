@@ -31,9 +31,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Authorization/Sources/**/*'
   
-  s.resource_bundles = {
-      'Authorization' => ['Example/Authorization/*.{xcassets,json,imageset,png,pdf,strings,stringsdict,html,otf,ttf}']
-  }
+  s.resource = 'Example/Authorization/*.{xcassets,json,imageset,png,pdf,strings,stringsdict,html,otf,ttf}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
