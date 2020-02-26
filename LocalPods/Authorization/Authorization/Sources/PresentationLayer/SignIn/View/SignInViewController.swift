@@ -46,8 +46,8 @@ public final class SignInViewController: UIViewController {
     private let checkButton = UIButton().with {
         $0.setTitleColor( R.color.textColor(), for: .normal)
         $0.setTitle("Задать пин", for: .normal)
-        $0.setImage(UIImage(named: "Unchecked"), for: .normal)
-        $0.setImage(UIImage(named: "Checked"), for: .selected)
+        $0.setImage(R.image.unchecked(), for: .normal)
+        $0.setImage(R.image.checked(), for: .selected)
     }
 
     // MARK: - Protocol Properties
@@ -63,6 +63,11 @@ public final class SignInViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
+    // MARK: - Deinit
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     @available(*, unavailable)
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -75,6 +80,22 @@ public final class SignInViewController: UIViewController {
         addSubviews()
         configureView()
         bindObservables()
+    }
+
+    @objc
+    private func keyboardWillShowNotification(_ notification: NSNotification) {
+        guard let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+
+        self.keyboardHeight = keyboardSize.height
+        view.setNeedsLayout()
+    }
+
+    @objc
+    private func keyboardWillHideNotification(_ notification: NSNotification) {
+        self.keyboardHeight = 0
+        view.setNeedsLayout()
     }
 
     // MARK: - Binding
@@ -99,6 +120,17 @@ public final class SignInViewController: UIViewController {
         continueButton.rx.tap.subscribe(onNext: { [unowned self] in
             self.output.didTapContinueButton()
         }).disposed(by: disposeBag)
+
+        let notifier = NotificationCenter.default
+        notifier.addObserver(self,
+                             selector: #selector(keyboardWillShowNotification(_:)),
+                             name: NSNotification.Name.UIKeyboardWillShow,
+                             object: nil)
+        notifier.addObserver(self,
+                             selector: #selector(keyboardWillHideNotification(_:)),
+                             name: NSNotification.Name.UIKeyboardWillHide,
+                             object: nil)
+
     }
 
     // MARK: - Layout
@@ -143,7 +175,7 @@ public final class SignInViewController: UIViewController {
         continueButton.pin
             .height(continueButtonHeight)
             .width(continueButtonWidth)
-            .bottom(keyboardHeight)
+            .bottom(keyboardHeight + 20)
             .marginBottom(40)
             .hCenter()
     }

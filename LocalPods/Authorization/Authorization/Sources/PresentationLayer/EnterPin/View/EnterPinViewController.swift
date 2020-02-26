@@ -42,7 +42,7 @@ class EnterPinViewController: UIViewController {
     }
     private let continueButton = UIButton().with {
         $0.backgroundColor =  R.color.mainColor()
-        $0.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+        $0.setTitleColor(R.color.textColor(), for: .normal)
         $0.setTitle("Далее", for: .normal)
         $0.layer.cornerRadius = 12
         $0.alpha = 0.4
@@ -56,6 +56,11 @@ class EnterPinViewController: UIViewController {
     init(output: EnterPinViewOutput) {
         self.output = output
         super.init(nibName: nil, bundle: nil)
+    }
+
+    // MARK: - Deinit
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
     @available(*, unavailable)
@@ -93,6 +98,16 @@ class EnterPinViewController: UIViewController {
         continueButton.rx.tap.subscribe(onNext: { [unowned self] in
             self.output.didTapContinueButton()
         }).disposed(by: disposeBag)
+
+        let notifier = NotificationCenter.default
+        notifier.addObserver(self,
+                             selector: #selector(keyboardWillShowNotification(_:)),
+                             name: NSNotification.Name.UIKeyboardWillShow,
+                             object: nil)
+        notifier.addObserver(self,
+                             selector: #selector(keyboardWillHideNotification(_:)),
+                             name: NSNotification.Name.UIKeyboardWillHide,
+                             object: nil)
     }
 
     // MARK: - Layout
@@ -132,7 +147,7 @@ class EnterPinViewController: UIViewController {
         continueButton.pin
             .height(continueButtonHeight)
             .width(continueButtonWidth)
-            .bottom(keyboardHeight)
+            .bottom(keyboardHeight + 20)
             .marginBottom(40)
             .hCenter()
     }
@@ -149,7 +164,23 @@ class EnterPinViewController: UIViewController {
     }
 
     private func configureView() {
-        view.backgroundColor = UIColor(named: "BackgroundColor")
+        view.backgroundColor = R.color.backgroundColor()
+    }
+    
+    @objc
+    private func keyboardWillShowNotification(_ notification: NSNotification) {
+        guard let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+
+        self.keyboardHeight = keyboardSize.height
+        view.setNeedsLayout()
+    }
+
+    @objc
+    private func keyboardWillHideNotification(_ notification: NSNotification) {
+        self.keyboardHeight = 0
+        view.setNeedsLayout()
     }
 
 }
