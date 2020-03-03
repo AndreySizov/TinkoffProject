@@ -79,11 +79,11 @@ class CheckPinViewController: UIViewController {
         let notifier = NotificationCenter.default
         notifier.addObserver(self,
                              selector: #selector(keyboardWillShowNotification(_:)),
-                             name: NSNotification.Name.UIKeyboardWillShow,
+                             name: UIResponder.keyboardWillShowNotification,
                              object: nil)
         notifier.addObserver(self,
                              selector: #selector(keyboardWillHideNotification(_:)),
-                             name: NSNotification.Name.UIKeyboardWillHide,
+                             name: UIResponder.keyboardWillHideNotification,
                              object: nil)
     }
 
@@ -134,7 +134,7 @@ class CheckPinViewController: UIViewController {
 
     @objc
     private func keyboardWillShowNotification(_ notification: NSNotification) {
-        guard let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
             return
         }
 

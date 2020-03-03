@@ -8,6 +8,9 @@ PODS:
     - RxSwift
   - Dip (7.0.1)
   - KeychainAccess (4.1.0)
+  - NetworkService (0.1.0):
+    - RxCocoa
+    - RxSwift
   - PinLayout (1.8.13)
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
@@ -22,6 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - Authorization (from `LocalPods/Authorization`)
+  - NetworkService (from `LocalPods/NetworkService`)
   - R.swift
   - SwiftLint
 
@@ -40,11 +44,14 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Authorization:
     :path: LocalPods/Authorization
+  NetworkService:
+    :path: LocalPods/NetworkService
 
 SPEC CHECKSUMS:
   Authorization: 86860c513ac69804d641ee6b1679e5b8aa5d8b4e
   Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  NetworkService: cd539934977f9aad844db529257523f72fda4e1b
   PinLayout: e41a50260a76508b7a7fcee8955c76639adc69bc
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
@@ -53,6 +60,6 @@ SPEC CHECKSUMS:
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: aeba30f5f544e72209be4004e02f125ec0f51775
+PODFILE CHECKSUM: 091bdf516a28e8d17759a31e51f13b26cc9dd0b7
 
 COCOAPODS: 1.8.4
