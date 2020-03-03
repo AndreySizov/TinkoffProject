@@ -1,0 +1,13 @@
+use_frameworks!
+
+target 'NetworkService_Example' do
+  pod 'NetworkService', :path => '../'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+
+  target 'NetworkService_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
