@@ -10,7 +10,9 @@ import Foundation
 import CoreData
 
 protocol IStorageManager {
-    
+    func write<T: ManagedObjectConvertible>(_ objects: [T])
+    func deleteAll<T: ManagedObjectConvertible>(_ object: T.Type)
+    func readAll<T: ManagedObjectConvertible>(completion: @escaping ([T]) -> Void)
 }
 
 class StorageManager: IStorageManager {

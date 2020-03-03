@@ -16,8 +16,11 @@ protocol ManagedObjectProtocol {
 
 extension ManagedObjectProtocol where Self: NSManagedObject {
     
-    static func fetch(from context: NSManagedObjectContext, with predicate: NSPredicate? = nil,
-                      sortDescriptors: [NSSortDescriptor]? = nil) -> [Self]? {
+    static func fetch(
+        from context: NSManagedObjectContext,
+        with predicate: NSPredicate? = nil,
+        sortDescriptors: [NSSortDescriptor]? = nil
+    ) -> [Self]? {
         let fetchRequest = Self.fetchRequest()
         
         fetchRequest.sortDescriptors = sortDescriptors
@@ -32,13 +35,11 @@ extension ManagedObjectProtocol where Self: NSManagedObject {
         return result
     }
     
-    static func insertObject(in context: NSManagedObjectContext
-    ) -> Self {
+    static func insertObject(in context: NSManagedObjectContext) -> Self {
         return Self(context: context)
     }
     
-    static func findOrInsertObject(predicate: NSPredicate, in context: NSManagedObjectContext
-    ) -> Self {
+    static func findOrInsertObject(predicate: NSPredicate, in context: NSManagedObjectContext) -> Self {
         if let object = fetch(from: context, with: predicate)?.first {
             return object
         }
