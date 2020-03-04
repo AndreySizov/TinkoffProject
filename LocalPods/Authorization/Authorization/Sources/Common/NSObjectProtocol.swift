@@ -14,6 +14,4 @@ extension NSObjectProtocol {
         closure(self)
         return self
     }
-
 }
-
