@@ -10,9 +10,9 @@ import Foundation
 import CoreData
 
 struct Symbol: Decodable {
-    var symbolId: String
-    var symbolDescription: String
-    var displaySymbol: String
+    let symbolId: String
+    let symbolDescription: String
+    let displaySymbol: String
 }
  
 extension Symbol: ManagedObjectConvertible {

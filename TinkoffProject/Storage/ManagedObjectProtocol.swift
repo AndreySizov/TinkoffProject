@@ -31,7 +31,6 @@ extension ManagedObjectProtocol where Self: NSManagedObject {
         context.performAndWait {
             result = try? context.fetch(fetchRequest) as? [Self]
         }
-        
         return result
     }
     
@@ -43,8 +42,6 @@ extension ManagedObjectProtocol where Self: NSManagedObject {
         if let object = fetch(from: context, with: predicate)?.first {
             return object
         }
-        
         return Self.insertObject(in: context)
     }
- 
 }

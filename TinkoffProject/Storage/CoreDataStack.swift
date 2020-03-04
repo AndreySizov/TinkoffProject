@@ -15,7 +15,7 @@ class CoreDataStack {
         let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentsUrl.appendingPathComponent("MyStore.sqlite")
     }
-    let dataModelName = "MyDataModel"
+    let dataModelName = "CoreDataModel"
     let dataModelExtension = "momd"
     
     lazy var managedObjectModel: NSManagedObjectModel = {
@@ -60,7 +60,6 @@ class CoreDataStack {
     
     typealias SaveCompletion = () -> Void
     func performSave(with context: NSManagedObjectContext, completion: SaveCompletion? = nil) {
-        
         context.perform { [weak self] in
             guard context.hasChanges else {
                 completion?()

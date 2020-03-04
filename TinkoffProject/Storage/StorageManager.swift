@@ -24,7 +24,7 @@ class StorageManager: IStorageManager {
     func write<T: ManagedObjectConvertible>(_ objects: [T]) {
         saveContext.perform { [weak self] in
             guard let self = self else { return }
-            _ = objects.map { $0.toManagedObject(in: self.saveContext) }
+            objects.forEach { $0.toManagedObject(in: self.saveContext) }
             self.coreDataStack.performSave(with: self.saveContext)
         }
     }
