@@ -10,6 +10,7 @@ target 'TinkoffProject' do
   pod 'R.swift'
   pod 'Authorization', :path => 'LocalPods/Authorization'
   pod 'NetworkService', :path => 'LocalPods/NetworkService'
+  pod 'Stocks', :path => 'LocalPods/Stocks'
   
   target 'TinkoffProjectTests' do
     inherit! :search_paths
