@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'Stocks/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'NetworkService' => ['NetworkService/Assets/*.png']
+  #   'Stocks' => ['Stocks/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

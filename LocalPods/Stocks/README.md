@@ -1,4 +1,4 @@
-# NetworkService
+# Stocks
 
 [![CI Status](https://img.shields.io/travis/AndreySizov/Stocks.svg?style=flat)](https://travis-ci.org/AndreySizov/Stocks)
 [![Version](https://img.shields.io/cocoapods/v/Stocks.svg?style=flat)](https://cocoapods.org/pods/Stocks)
@@ -17,7 +17,7 @@ Stocks is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NetworkService'
+pod 'Stocks'
 ```
 
 ## Author
@@ -26,4 +26,4 @@ Andrey Sizov, ansiz777@yandex.ru
 
 ## License
 
-NetworkService is available under the MIT license. See the LICENSE file for more info.
+Stocks is available under the MIT license. See the LICENSE file for more info.
