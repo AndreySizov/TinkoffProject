@@ -1,0 +1,48 @@
+PODS:
+  - NetworkService (0.1.0):
+    - RxCocoa
+    - RxSwift
+  - PinLayout (1.8.13)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - Stocks (0.1.0):
+    - NetworkService
+    - PinLayout
+    - RxCocoa
+    - RxSwift
+
+DEPENDENCIES:
+  - NetworkService (from `../../NetworkService`)
+  - PinLayout
+  - RxCocoa
+  - RxSwift
+  - Stocks (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - PinLayout
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  NetworkService:
+    :path: "../../NetworkService"
+  Stocks:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NetworkService: cd539934977f9aad844db529257523f72fda4e1b
+  PinLayout: e41a50260a76508b7a7fcee8955c76639adc69bc
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  Stocks: 61f4266db0b5d57875b2efd39ef0fdd642e163b7
+
+PODFILE CHECKSUM: 798de0b0dc1a2fa543f0739630e230120072a436
+
+COCOAPODS: 1.8.4
