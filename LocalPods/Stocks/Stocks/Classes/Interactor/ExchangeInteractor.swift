@@ -1,6 +1,6 @@
 //
 //  ExchangeInteractor.swift
-//  GenericTableTest
+//  Stocks
 //
 //  Created by Андрей on 08/03/2020.
 //  Copyright © 2020 AnSiz. All rights reserved.
@@ -18,7 +18,7 @@ class ExchangeInteractor {
                                                 baseURL: "https://finnhub.io/api/")
     
     func getData(with exchange: String) -> Single<[Symbol]> {
-        let request = Request(query: "stock/symbol?exchange=\(exchange)&token=bpdsijnrh5rauiikk95g", method: .get)
+        let request = Request(query: "stock/symbol?exchange=\(exchange)&token=\(Constants.token)", method: .get)
         return networkService.data(for: request)
     }
 }

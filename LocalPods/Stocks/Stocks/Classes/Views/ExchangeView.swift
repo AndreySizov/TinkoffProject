@@ -1,6 +1,6 @@
 //
 //  ExchangeView.swift
-//  GenericTableTest
+//  Stocks
 //
 //  Created by Андрей on 08/03/2020.
 //  Copyright © 2020 AnSiz. All rights reserved.
@@ -23,7 +23,7 @@ class ExchangeView: UIView {
     var tickerCollectionView: UICollectionView!
     
     // MARK: - Internal Controllers
-    var tickerCollectionVC: TickerCollectionViewController!
+    weak var tickerCollectionVC: TickerCollectionViewController!
     
     // MARK: - Init
     init(frame: CGRect,viewController: UIViewController) {

@@ -1,6 +1,6 @@
 //
 //  CompanyTableViewCell.swift
-//  GenericTableTest
+//  Stocks
 //
 //  Created by Андрей on 03/03/2020.
 //  Copyright © 2020 AnSiz. All rights reserved.
@@ -70,7 +70,6 @@ class CompanyTableViewCell: UITableViewCell, Adaptable {
         companyLabel = UILabel()
         companyLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         companyLabel.textColor = UIColor.black
-        companyLabel.text = "ACompany"
         companyLabel.textAlignment = .left
         
         circleView = UIView()
@@ -82,7 +81,6 @@ class CompanyTableViewCell: UITableViewCell, Adaptable {
         tickerLabel = UILabel()
         tickerLabel.font = UIFont.systemFont(ofSize: 15, weight: .medium)
         tickerLabel.textColor = UIColor.black
-        tickerLabel.text = "AA"
         tickerLabel.textAlignment = .center
     }
     

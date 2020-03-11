@@ -1,6 +1,6 @@
 //
 //  TickerCollectionViewCell.swift
-//  GenericTableTest
+//  Stocks
 //
 //  Created by Андрей on 03/03/2020.
 //  Copyright © 2020 AnSiz. All rights reserved.
@@ -22,7 +22,6 @@ class TickerCollectionViewCell: UICollectionViewCell {
         tickerLabel = UILabel()
         tickerLabel.font = UIFont.systemFont(ofSize: 10, weight: .regular)
         tickerLabel.textColor = UIColor.black
-        tickerLabel.text = "AA"
         tickerLabel.textAlignment = .center
         addSubview(tickerLabel)
         setLayout()

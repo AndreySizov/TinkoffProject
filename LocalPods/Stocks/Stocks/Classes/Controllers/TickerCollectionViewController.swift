@@ -1,6 +1,6 @@
 //
 //  TickerCollectionViewController.swift
-//  GenericTableTest
+//  Stocks
 //
 //  Created by Андрей on 03/03/2020.
 //  Copyright © 2020 AnSiz. All rights reserved.
@@ -34,10 +34,10 @@ class TickerCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let array = tickersArray{
-            return array.count
+        guard let array = tickersArray else {
+            return 0
         }
-        return 0
+        return array.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
