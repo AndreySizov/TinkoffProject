@@ -12,7 +12,7 @@ import PinLayout
 class ExchangeView: UIView {
 
     // MARK: - Dependency injection
-    private var viewController: UIViewController
+    private weak var viewController: UIViewController?
     
     // MARK: - Subviews
     var mainLabel: UILabel!
@@ -23,7 +23,7 @@ class ExchangeView: UIView {
     var tickerCollectionView: UICollectionView!
     
     // MARK: - Internal Controllers
-    weak var tickerCollectionVC: TickerCollectionViewController!
+    var tickerCollectionVC: TickerCollectionViewController!
     
     // MARK: - Init
     init(frame: CGRect,viewController: UIViewController) {
@@ -150,7 +150,7 @@ class ExchangeView: UIView {
     
     private func addChildrenToController(children: [UIViewController]){
         for controller in children{
-            viewController.addChild(controller)
+            viewController?.addChild(controller)
         }
     }
     
