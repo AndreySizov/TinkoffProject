@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Authorization
+import Stocks
 
 
 @UIApplicationMain
@@ -17,7 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let vc = AuthorizationModule.createAuthorizationFlow()
+        
+//       deprecated in release 2.0.2., checkout release 1.0.1 for Authorization perfomance
+//        let vc = AuthorizationModule.createAuthorizationFlow()
+        
+        let vc = Stocks.ViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         return true
