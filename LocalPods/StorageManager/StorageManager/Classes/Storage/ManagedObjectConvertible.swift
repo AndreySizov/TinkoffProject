@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-protocol ManagedObjectConvertible {
+public protocol ManagedObjectConvertible {
     associatedtype ManagedObject: NSManagedObject, ManagedObjectProtocol
     @discardableResult func toManagedObject(in context: NSManagedObjectContext) -> ManagedObject
 }

@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15BAEBCE240D1CAE00B1BE37 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BAEBCD240D1CAE00B1BE37 /* StorageManager.swift */; };
-		15BAEBD0240D1CBF00B1BE37 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BAEBCF240D1CBF00B1BE37 /* CoreDataStack.swift */; };
-		15BAEBD5240D21B400B1BE37 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15BAEBD3240D21B400B1BE37 /* CoreDataModel.xcdatamodeld */; };
-		15BAEBDD240D38F800B1BE37 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BAEBDC240D38F700B1BE37 /* Symbol.swift */; };
-		15BAEBDF240D3AD700B1BE37 /* ManagedObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BAEBDE240D3AD700B1BE37 /* ManagedObjectProtocol.swift */; };
-		15BAEBE1240F05DF00B1BE37 /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BAEBE0240F05DF00B1BE37 /* ManagedObjectConvertible.swift */; };
-		15BAEBE3240F064400B1BE37 /* ManagedSymbol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BAEBE2240F064400B1BE37 /* ManagedSymbol+Extension.swift */; };
 		1AEEC20790DDF28B4924865C /* Pods_TinkoffProject_TinkoffProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D310D96C29BD3312BE0AFAA3 /* Pods_TinkoffProject_TinkoffProjectUITests.framework */; };
 		49E8C1BC9000D5449A07E5D6 /* Pods_TinkoffProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B4879A22E2B34215908306 /* Pods_TinkoffProjectTests.framework */; };
 		55AD9E3F23FDF7D20086CFBA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD9E3E23FDF7D20086CFBA /* R.generated.swift */; };
@@ -48,13 +41,6 @@
 
 /* Begin PBXFileReference section */
 		000BAD2F3A0E18D4FE916500 /* Pods-TinkoffProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinkoffProject.release.xcconfig"; path = "Target Support Files/Pods-TinkoffProject/Pods-TinkoffProject.release.xcconfig"; sourceTree = "<group>"; };
-		15BAEBCD240D1CAE00B1BE37 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		15BAEBCF240D1CBF00B1BE37 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		15BAEBD4240D21B400B1BE37 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
-		15BAEBDC240D38F700B1BE37 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
-		15BAEBDE240D3AD700B1BE37 /* ManagedObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectProtocol.swift; sourceTree = "<group>"; };
-		15BAEBE0240F05DF00B1BE37 /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
-		15BAEBE2240F064400B1BE37 /* ManagedSymbol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedSymbol+Extension.swift"; sourceTree = "<group>"; };
 		32B4879A22E2B34215908306 /* Pods_TinkoffProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinkoffProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		390BCD6116C7895EDE9308CB /* Pods_TinkoffProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinkoffProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E9E2531E1BCFFE0B10FAAB /* Pods-TinkoffProject-TinkoffProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinkoffProject-TinkoffProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-TinkoffProject-TinkoffProjectUITests/Pods-TinkoffProject-TinkoffProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,20 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15BAEBCC240D1C8E00B1BE37 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				15BAEBCD240D1CAE00B1BE37 /* StorageManager.swift */,
-				15BAEBDE240D3AD700B1BE37 /* ManagedObjectProtocol.swift */,
-				15BAEBDC240D38F700B1BE37 /* Symbol.swift */,
-				15BAEBE2240F064400B1BE37 /* ManagedSymbol+Extension.swift */,
-				15BAEBCF240D1CBF00B1BE37 /* CoreDataStack.swift */,
-				15BAEBE0240F05DF00B1BE37 /* ManagedObjectConvertible.swift */,
-				15BAEBD3240D21B400B1BE37 /* CoreDataModel.xcdatamodeld */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
 		1C8550E4715329F5583E030C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +137,6 @@
 				55AD9E3E23FDF7D20086CFBA /* R.generated.swift */,
 				55DC098123FDF1380054614C /* SceneDelegate.swift */,
 				55DC098323FDF1380054614C /* ViewController.swift */,
-				15BAEBCC240D1C8E00B1BE37 /* Storage */,
 				55DC098523FDF1380054614C /* Main.storyboard */,
 				55DC098B23FDF13B0054614C /* Assets.xcassets */,
 				55DC098D23FDF13B0054614C /* LaunchScreen.storyboard */,
@@ -482,18 +453,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BAEBD0240D1CBF00B1BE37 /* CoreDataStack.swift in Sources */,
 				55DC098423FDF1380054614C /* ViewController.swift in Sources */,
 				55DC098023FDF1380054614C /* AppDelegate.swift in Sources */,
-				15BAEBE3240F064400B1BE37 /* ManagedSymbol+Extension.swift in Sources */,
 				55AD9E3F23FDF7D20086CFBA /* R.generated.swift in Sources */,
-				15BAEBD5240D21B400B1BE37 /* CoreDataModel.xcdatamodeld in Sources */,
-				15BAEBCE240D1CAE00B1BE37 /* StorageManager.swift in Sources */,
-				15BAEBE1240F05DF00B1BE37 /* ManagedObjectConvertible.swift in Sources */,
 				55DC098223FDF1380054614C /* SceneDelegate.swift in Sources */,
 				55DC098A23FDF1380054614C /* TinkoffProject.xcdatamodeld in Sources */,
-				15BAEBDD240D38F800B1BE37 /* Symbol.swift in Sources */,
-				15BAEBDF240D3AD700B1BE37 /* ManagedObjectProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,16 +788,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		15BAEBD3240D21B400B1BE37 /* CoreDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				15BAEBD4240D21B400B1BE37 /* CoreDataModel.xcdatamodel */,
-			);
-			currentVersion = 15BAEBD4240D21B400B1BE37 /* CoreDataModel.xcdatamodel */;
-			path = CoreDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		55DC098823FDF1380054614C /* TinkoffProject.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
