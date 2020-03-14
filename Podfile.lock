@@ -26,6 +26,8 @@ PODS:
     - PinLayout
     - RxCocoa
     - RxSwift
+    - StorageManager
+  - StorageManager (0.1.0)
   - SwiftLint (0.39.1)
 
 DEPENDENCIES:
@@ -33,6 +35,7 @@ DEPENDENCIES:
   - NetworkService (from `LocalPods/NetworkService`)
   - R.swift
   - Stocks (from `LocalPods/Stocks`)
+  - StorageManager (from `LocalPods/StorageManager`)
   - SwiftLint
 
 SPEC REPOS:
@@ -54,6 +57,8 @@ EXTERNAL SOURCES:
     :path: LocalPods/NetworkService
   Stocks:
     :path: LocalPods/Stocks
+  StorageManager:
+    :path: LocalPods/StorageManager
 
 SPEC CHECKSUMS:
   Authorization: 86860c513ac69804d641ee6b1679e5b8aa5d8b4e
@@ -66,9 +71,10 @@ SPEC CHECKSUMS:
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
-  Stocks: 61f4266db0b5d57875b2efd39ef0fdd642e163b7
+  Stocks: 7a0f016d4385e599e6fbb0619d2e27b48ea40ed0
+  StorageManager: 871b19dd2b8c0fe2001be20c65b54b65903bba02
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: c252eb51cc57c5aadc6101c0aaca0ade80ba36d6
+PODFILE CHECKSUM: 0d504cc078884bbf9b31ca7c241807949f46ee62
 
 COCOAPODS: 1.8.4

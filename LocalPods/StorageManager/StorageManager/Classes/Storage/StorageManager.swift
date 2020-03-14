@@ -9,27 +9,27 @@
 import Foundation
 import CoreData
 
-protocol IStorageManager {
+public protocol IStorageManager {
     func write<T: ManagedObjectConvertible>(_ objects: [T])
     func deleteAll<T: ManagedObjectConvertible>(_ object: T.Type)
     func readAll<T: ManagedObjectConvertible>(completion: @escaping ([T]) -> Void)
 }
 
-class StorageManager: IStorageManager {
+public class StorageManager: IStorageManager {
     let coreDataStack = CoreDataStack.shared
     var saveContext: NSManagedObjectContext {
         return coreDataStack.saveContext
     }
     
-    func write<T: ManagedObjectConvertible>(_ objects: [T]) {
+    public func write<T: ManagedObjectConvertible>(_ objects: [T]) {
         saveContext.perform { [weak self] in
             guard let self = self else { return }
             objects.forEach { $0.toManagedObject(in: self.saveContext) }
             self.coreDataStack.performSave(with: self.saveContext)
         }
     }
-    
-    func readAll<T: ManagedObjectConvertible>(completion: @escaping ([T]) -> Void) {
+
+    public func readAll<T: ManagedObjectConvertible>(completion: @escaping ([T]) -> Void) {
         saveContext.perform { [weak self] in
             guard let self = self else { return }
             let results = T.ManagedObject.fetch(from: self.saveContext)
@@ -38,7 +38,7 @@ class StorageManager: IStorageManager {
         }
     }
     
-    func deleteAll<T: ManagedObjectConvertible>(_ object: T.Type) {
+    public func deleteAll<T: ManagedObjectConvertible>(_ object: T.Type) {
         readAll { [weak self] (objects: [T]) in
             guard let self = self else { return }
             self.saveContext.perform {

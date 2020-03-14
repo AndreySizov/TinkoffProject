@@ -93,7 +93,7 @@ class CompanyTableViewCell: UITableViewCell, Adaptable {
     
     // MARK: - Obtain model
     func adapt(model: Symbol) {
-        companyLabel.text = model.description.uppercased()
+        companyLabel.text = model.symbolDescription.uppercased()
         companyLabel.textColor = UIColor.black
         companyLabel.font = UIFont.systemFont(ofSize: 20)
        

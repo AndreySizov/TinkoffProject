@@ -9,14 +9,14 @@
 import Foundation
 import CoreData
 
-protocol ManagedObjectProtocol {
+public protocol ManagedObjectProtocol {
     associatedtype Entity
     func toEntity() -> Entity?
 }
 
 extension ManagedObjectProtocol where Self: NSManagedObject {
     
-    static func fetch(
+    public static func fetch(
         from context: NSManagedObjectContext,
         with predicate: NSPredicate? = nil,
         sortDescriptors: [NSSortDescriptor]? = nil
@@ -34,11 +34,11 @@ extension ManagedObjectProtocol where Self: NSManagedObject {
         return result
     }
     
-    static func insertObject(in context: NSManagedObjectContext) -> Self {
+    public static func insertObject(in context: NSManagedObjectContext) -> Self {
         return Self(context: context)
     }
     
-    static func findOrInsertObject(predicate: NSPredicate, in context: NSManagedObjectContext) -> Self {
+    public static func findOrInsertObject(predicate: NSPredicate, in context: NSManagedObjectContext) -> Self {
         if let object = fetch(from: context, with: predicate)?.first {
             return object
         }

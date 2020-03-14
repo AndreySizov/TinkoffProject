@@ -11,6 +11,8 @@ target 'TinkoffProject' do
   pod 'Authorization', :path => 'LocalPods/Authorization'
   pod 'NetworkService', :path => 'LocalPods/NetworkService'
   pod 'Stocks', :path => 'LocalPods/Stocks'
+  pod 'StorageManager', :path => 'LocalPods/StorageManager'
+
   
   target 'TinkoffProjectTests' do
     inherit! :search_paths

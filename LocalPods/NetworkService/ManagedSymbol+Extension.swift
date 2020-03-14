@@ -9,7 +9,7 @@
 import Foundation
 
 extension ManagedSymbol: ManagedObjectProtocol {
-    func toEntity() -> Symbol? {
+    public func toEntity() -> Symbol? {
         guard let symbolId = symbolId, let symbolDescription = symbolDescription, let displaySymbol = displaySymbol else { return nil }
         return Symbol(symbolId: symbolId, symbolDescription: symbolDescription, displaySymbol: displaySymbol)
     }
